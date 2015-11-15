@@ -18,3 +18,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 insecure                # Allow all DB writes from clients (for prototyping)
 twbs:bootstrap
+iron:router
+sacha:spin
+ian:accounts-ui-bootstrap-3
+accounts-password
