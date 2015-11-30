@@ -31,10 +31,10 @@ Template.postEdit.events({
     Meteor.call('postUpdate', currentPostId, postProperties, function(error, result) {
       // display the error to the user
       if (error)
-        return throwError(error.reason);
+        return Errors.throw(error.reason);
 
       if (result.linkExists)
-        return throwError(error.reason);
+        return Errors.throw(result.reason);
 
       Router.go('postPage', {_id: result._id})
     });

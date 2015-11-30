@@ -1,14 +1,7 @@
 <template name="postsList">
   <div class="posts">
-    {{ #if postsCount }}
       {{ #each posts }}
         {{> postItem }}
       {{ /each }}
-    {{ else }}
-      <div class="not-found page jumbotron">
-        <h2>Nothing</h2>
-        <p>Sorry, we couldn't find any posts.</p>
-      </div>
-    {{ /if }}
   </div>
 </template>
